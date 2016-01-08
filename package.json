@@ -18,7 +18,7 @@
     "Starter",
     "template"
   ],
-  "author": "Ali Al Dallal",
+  "author": "Mark Howard, Josh Bivens",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alicoding/react-webpack-babel/issues"
