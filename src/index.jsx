@@ -9,7 +9,7 @@ export class App extends React.Component {
 		return (
       <div>
         <RecipeForm />
-				<Recipes />
+		<Recipes />
       </div>
 		);
 	}
