@@ -1,13 +1,18 @@
 import React from 'react';
 
 export default class extends React.Component {
+
   render() {
     return (
       <div>
         <form>
 
           <div>
-            <input type="text" id="name" placeholder="Recipe Name" min="0"/>
+            <input type="text" 
+                   id="name" 
+                   placeholder="Recipe Name" 
+                   min="0"
+             />
           </div>
 
           <div>

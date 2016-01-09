@@ -25,9 +25,11 @@
   },
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
+    "firebase": "^2.3.2",
     "node-libs-browser": "0.5.3",
     "react": "0.14.6",
-    "react-dom": "0.14.6"
+    "react-dom": "0.14.6",
+    "rebase": "^0.3.0"
   },
   "devDependencies": {
     "babel-core": "6.4.0",
