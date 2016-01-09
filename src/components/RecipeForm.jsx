@@ -1,5 +1,7 @@
 import React from 'react';
 
+// I think the ingredients and steps inputs should be their own components.
+
 export default class extends React.Component {
 
   render() {
@@ -16,19 +18,28 @@ export default class extends React.Component {
           </div>
 
           <div>
-            <input type="number" id="prep" name="prep" placeholder="Prep Time in minutes" min="0"/>
+            <input type="number" 
+                   id="prep" 
+                   name="prep" 
+                   placeholder="Prep Time in minutes" 
+                   min="0"
+             />
           </div>
 
           <div>
-            <input type="number" id="cook" name="cook" placeholder="Cook Time"/>
+            <input type="number"
+                   id="cook" 
+                   name="cook" 
+                   placeholder="Cook Time"
+            />
           </div>
 
           <div>
-            <textarea id="ingredients" className="materialize-textarea" placeholder="Ingredients"></textarea>
+            <textarea id="ingredients" placeholder="Ingredients"></textarea>
           </div>
 
           <div>
-            <textarea id="steps" className="materialize-textarea" placeholder="Steps"></textarea>
+            <textarea id="steps" placeholder="Steps"></textarea>
           </div>
 
           <input id="add" type="submit" value="Add"/>
