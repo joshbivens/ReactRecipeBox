@@ -18,14 +18,16 @@
     "Starter",
     "template"
   ],
-  "author": "Ali Al Dallal",
+  "author": "Mark Howard, Josh Bivens",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alicoding/react-webpack-babel/issues"
   },
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
+    "firebase": "^2.3.2",
     "node-libs-browser": "0.5.3",
+    "re-base": "^1.5.0",
     "react": "0.14.6",
     "react-dom": "0.14.6"
   },
