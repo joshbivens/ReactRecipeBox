@@ -16,20 +16,25 @@ export class App extends React.Component {
           steps: ["Step 1", "Step 2", "Step 3"]
          }
       ]
-    }  
+    }
   }
-  
+
   handleAddIngredient(newIng) {
     this.setState({
       ingredients: this.state.ingredients.concat([newIng])
     })
   }
-  
+
 	render() {
 		return (
       <div>
+
         <RecipeForm add={this.handleAddIngredient.bind(this)}/>
 				<Recipes recipes={this.state.recipes}/>
+
+        <RecipeForm />
+		<Recipes />
+
       </div>
 		);
 	}
