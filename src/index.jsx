@@ -28,8 +28,13 @@ export class App extends React.Component {
 	render() {
 		return (
       <div>
+<<<<<<< HEAD
         <RecipeForm add={this.handleAddIngredient.bind(this)}/>
 				<Recipes recipes={this.state.recipes}/>
+=======
+        <RecipeForm />
+		<Recipes />
+>>>>>>> c3e019cfcb21de0dbe0c1504734077e1352af3cc
       </div>
 		);
 	}
