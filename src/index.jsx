@@ -1,4 +1,6 @@
 //require("../node_modules/materialize-css/dist/css/materialize.css")
+require('../public/css/main.css');
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import RecipeForm from './components/RecipeForm';
@@ -9,31 +11,47 @@ export class App extends React.Component {
     super(props);
     this.state = {
       recipes: [
-        { name: 'Mac and Cheese',
+         { 
+          name: 'Mac and Cheese',
           prep: 10,
           cook: 30,
           ingredients: ["Milk", "Cheese", "Macaroni"],
           steps: ["Step 1", "Step 2", "Step 3"]
-         }
+         },
+         { 
+          name: 'Mac and Cheese',
+          prep: 10,
+          cook: 30,
+          ingredients: ["Milk", "Cheese", "Macaroni"],
+          steps: ["Step 1", "Step 2", "Step 3"]
+         },
+         { 
+          name: 'Mac and Cheese',
+          prep: 10,
+          cook: 30,
+          ingredients: ["Milk", "Cheese", "Macaroni"],
+          steps: ["Step 1", "Step 2", "Step 3"]
+         },
+         { 
+          name: 'Mac and Cheese',
+          prep: 10,
+          cook: 30,
+          ingredients: ["Milk", "Cheese", "Macaroni"],
+          steps: ["Step 1", "Step 2", "Step 3"]
+         },
       ]
     }
   }
 
-  handleAddIngredient(newIng) {
-    this.setState({
-      ingredients: this.state.ingredients.concat([newIng])
-    })
-  }
-
 	render() {
 		return (
-      <div>
-
-        <RecipeForm add={this.handleAddIngredient.bind(this)}/>
-				<Recipes recipes={this.state.recipes}/>
-
-        <RecipeForm />
-		<Recipes />
+      <div className="container">
+        <header>
+          <h1>React Recipe Box</h1>
+        </header>
+        <RecipeForm></RecipeForm>
+        <h2>Recently Added</h2>
+				<Recipes recipes={this.state.recipes}></Recipes>
 
       </div>
 		);

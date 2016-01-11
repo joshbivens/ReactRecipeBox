@@ -6,7 +6,7 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="recipe-form">
         <form>
 
           <div>
@@ -21,12 +21,10 @@ export default class extends React.Component {
             <input type="number" 
                    id="prep" 
                    name="prep" 
-                   placeholder="Prep Time in minutes" 
+                   placeholder="Prep Time" 
                    min="0"
              />
-          </div>
-
-          <div>
+             
             <input type="number"
                    id="cook" 
                    name="cook" 
@@ -42,7 +40,7 @@ export default class extends React.Component {
             <textarea id="steps" placeholder="Steps"></textarea>
           </div>
 
-          <input id="add" type="submit" value="Add"/>
+          <input id="add" type="submit" value="ADD RECIPE"/>
 
         </form>
       </div>
